@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 xxx <-4
 yyy <-18
 
-source("https://raw.githubusercontent.com/tcmb-reserves/tcmb-reserves.github.io/master/docs/net.R")
+source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/main/docs/net.R")
 
 zaman <- tdt[nrow(tdt)]$time
 
@@ -28,15 +28,13 @@ zaman1 <- tdt[tdt[time == zaman, which = T] - 1]$time
 zaman1
 ilkk <- as.Date("2021-01-01")
 
-source("https://raw.githubusercontent.com/tcmb-reserves/tcmb-reserves.github.io/master/docs/graphs.R")
+source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/main/docs/graphs.R")
 
 ```
 
-<p style="color:red">Rezerv hesaplamalarımızın daha doğru olması için, haftalık ortalama döviz kuru yerine günlük döviz kuru kullanmaya karar verdik. Güncel ve geçmiş rezerv verilerini de bu doğrultuda güncelledik.</p>
-
 <p style="color:blue">Bu sayfa yeni veriler geldikçe otomatik olarak güncellenecektir.</p>
 
-[Verileri İndir](https://github.com/tcmb-reserves/tcmb-reserves.github.io/blob/master/Tablo.xlsx?raw=true)
+[Verileri İndir](https://github.com/mb-reserves/mb-reserves.github.io/blob/main/Tablo.xlsx?raw=true)
 
 
 
@@ -51,7 +49,7 @@ source("https://raw.githubusercontent.com/tcmb-reserves/tcmb-reserves.github.io/
 
 ::: {style="text-align: justify;"}
 
-TCMB tarafından yapılan Swap işlemleri ve TCMB Rezervleri gündemde geniş bir yer kaplıyor. TCMB’nin açıkladığı Swap verilerinin EVDS veri sisteminde olmaması ve PDF formatında paylaşılması da Swap verilerinin çekilmesini ve analiz edilmesini zorlaştırıyor. Bu konuyu araştıran birçok ekonomist ve akademisyenin verilere ve rezervlerin son durumuna daha rahat ulaşabilmesi için rezervleri otomatik çıkartan bir site hazırlama gereği duyduk. Çalışmamızda kullandığımız verileri [Brüt Resmi Rezerv Varlıkları](https://evds2.tcmb.gov.tr/index.php?/evds/DataGroupLink/5/bie_abres2/tr), [TCMB Haftalık Vaziyeti](https://evds2.tcmb.gov.tr/index.php?/evds/serieMarket/collapse_13/5933/DataGroup/turkish/bie_mbblnch/), [TCMB Taraflı Swap İşlemleri](https://www.tcmb.gov.tr/wps/wcm/connect/a6ffdb2f-47d9-4ae9-8c39-5075867aaec3/TCMB+Tarafli+Swap+Islemleri.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-a6ffdb2f-47d9-4ae9-8c39-5075867aaec3-nzm2YQt%22) ve [Uluslararası Rezervler ve Döviz Likiditesi](https://www.tcmb.gov.tr/wps/wcm/connect/cc755e33-b5c0-4632-bfe4-2434d35da011/RT20210326TR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-cc755e33-b5c0-4632-bfe4-2434d35da011-nzliV18)'nden elde ettik. Bu işlemleri R programını kullanarak yaptık. Hesaplamalara dair detaylı bilgiler Metodoloji bölümünde bulunmaktadır. Çalışmamız açık kodludur. Kaynak koduna [GitHub sayfamızdan](https://github.com/tcmb-reserves/tcmb-reserves.github.io) erişebilirsiniz. Yeni veriler açıklandıkça sayfa güncellenecektir.
+TCMB tarafından yapılan Swap işlemleri ve TCMB Rezervleri gündemde geniş bir yer kaplıyor. TCMB’nin açıkladığı Swap verilerinin EVDS veri sisteminde olmaması ve PDF formatında paylaşılması da Swap verilerinin çekilmesini ve analiz edilmesini zorlaştırıyor. Bu konuyu araştıran birçok ekonomist ve akademisyenin verilere ve rezervlerin son durumuna daha rahat ulaşabilmesi için rezervleri otomatik çıkartan bir site hazırlama gereği duyduk. Çalışmamızda kullandığımız verileri [Brüt Resmi Rezerv Varlıkları](https://evds2.tcmb.gov.tr/index.php?/evds/DataGroupLink/5/bie_abres2/tr), [TCMB Haftalık Vaziyeti](https://evds2.tcmb.gov.tr/index.php?/evds/serieMarket/collapse_13/5933/DataGroup/turkish/bie_mbblnch/), [TCMB Taraflı Swap İşlemleri](https://www.tcmb.gov.tr/wps/wcm/connect/a6ffdb2f-47d9-4ae9-8c39-5075867aaec3/TCMB+Tarafli+Swap+Islemleri.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-a6ffdb2f-47d9-4ae9-8c39-5075867aaec3-nzm2YQt%22) ve [Uluslararası Rezervler ve Döviz Likiditesi](https://www.tcmb.gov.tr/wps/wcm/connect/cc755e33-b5c0-4632-bfe4-2434d35da011/RT20210326TR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-cc755e33-b5c0-4632-bfe4-2434d35da011-nzliV18)'nden elde ettik. Bu işlemleri R programını kullanarak yaptık. Hesaplamalara dair detaylı bilgiler Metodoloji bölümünde bulunmaktadır. Çalışmamız açık kodludur. Kaynak koduna [GitHub sayfamızdan](https://github.com/mb-reserves/mb-reserves.github.io) erişebilirsiniz. Yeni veriler açıklandıkça sayfa güncellenecektir.
 
 :::
 
