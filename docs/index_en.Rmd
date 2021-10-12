@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 xxx <-4
 yyy <-18
 
-source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/main/docs/netrezerv_en.R")
+source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/master/docs/netrezerv_en.R")
 
 zaman <- tdt[nrow(tdt)]$time
 
@@ -27,13 +27,13 @@ zaman1 <- tdt[tdt[time == zaman, which = T] - 1]$time
 
 ilkk <- as.Date("2021-01-01")
 
-source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/main/docs/graphs_en.R")
+source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/master/docs/graphs_en.R")
 
 ```
 
 <p style="color:blue"> This page will be updated automatically as new data released.</p>
 
-[Download the Dataset](https://github.com/mb-reserves/mb-reserves.github.io/blob/main/data_table.xlsx?raw=true)
+[Download the Dataset](https://github.com/mb-reserves/mb-reserves.github.io/raw/master/data_table.xlsx)
 
 
 ## About
