@@ -23,6 +23,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <div><a href="index.html">Anasayfa'ya Geri Dön</a></div>
 
+## Ekim 2021
+
+<div><a href="TCMB_TR_2021-10-15.html">2021-10-15</a></div>
+<div><a href="TCMB_TR_2021-10-08.html">2021-10-08</a></div>
+<div><a href="TCMB_TR_2021-10-01.html">2021-10-01</a></div>
+
 ## Eylül 2021
 
 <div><a href="TCMB_TR_2021-10-01.html">2021-10-01</a></div>
