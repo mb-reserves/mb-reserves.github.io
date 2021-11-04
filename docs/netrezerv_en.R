@@ -38,6 +38,16 @@ USD1 <- data.table(time = as.Date("2021-01-01"), TP.DK.USD.A.YTL = as.numeric(7.
 
 USDD <- rbind(USD1, USDD)
 
+all_dates_to_2025 <- seq(as.Date("2021-01-01"), as.Date("2025-01-01"), by = "days")
+
+all_dates_to_2025 <- as.data.table(all_dates_to_2025)
+
+setnames(all_dates_to_2025, "time")
+
+USDD <- merge(all_dates_to_2025, USDD, by = "time", all.x = T, all.y = T)
+
+USDD <- na.locf(USDD, fromLast = T)
+
 BRUTR <- merge(BRUTR, USDD, by = "time")
 
 colnames(BRUTR) <- c("time", "altin", "doviz", "SDR", "mk", "USD")

@@ -30,3 +30,4 @@ as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+6])
 as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+18])
 as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+19])
 as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+20])
+
