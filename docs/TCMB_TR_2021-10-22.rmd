@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 xxx <-4
 yyy <-18
 
-source("https://raw.githubusercontent.com/tcmb-reserves/tcmb-reserves.github.io/master/docs/net.R")
+source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/master/docs/net.R")
 
 zaman <- tdt[37]$time
 
@@ -28,7 +28,7 @@ zaman1 <- tdt[tdt[time == zaman, which = T] - 1]$time
 zaman1
 ilkk <- as.Date("2021-01-01")
 
-source("https://raw.githubusercontent.com/tcmb-reserves/tcmb-reserves.github.io/master/docs/graphs.R")
+source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/master/docs/graphs.R")
 
 ```
 
