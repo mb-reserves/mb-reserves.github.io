@@ -21,7 +21,7 @@ yyy <-18
 
 source("https://raw.githubusercontent.com/tcmb-reserves/tcmb-reserves.github.io/master/docs/netrezerv_en.R")
 
-zaman <- tdt[38]$time
+zaman <- tdt[nrow(tdt)]$time
 
 zaman1 <- tdt[tdt[time == zaman, which = T] - 1]$time
 
