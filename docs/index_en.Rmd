@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 xxx <-4
 yyy <-18
 
-source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/master/docs/netrezerv_en.R")
+source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/master/docs/netsrezerv_en.R")
 
 zaman <- tdt[nrow(tdt)]$time
 
