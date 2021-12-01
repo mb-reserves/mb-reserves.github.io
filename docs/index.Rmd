@@ -215,6 +215,12 @@ zama
 viog
 ```
 
+## VIOP Islemlerinin Buyuklugu - Gunluk Veri
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
+viogg
+```
+
 ## Yurtici Bankalar SWAP - Bankalar YP Mevduati Orani
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
