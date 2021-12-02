@@ -729,3 +729,12 @@ sub4 <- subplot(shnar_graph, shnetr_graph, shndr_graph, nrows = 3, shareX = T, t
                                     '</sup>')),legend = list(orientation = 'h'),yaxis=list(fixedrange=T),xaxis=list(fixedrange=T)) 
 
 sub4
+
+viogg <- plot_ly(viop_table, x = viop_table$time, y = viop_table$`Toplam Doviz Satım Pozisyonu`, 
+                 type = 'scatter', mode = 'lines',
+                 hovertemplate = "%{x} <br> %{y} Milyon Dolar <extra></extra>") %>%
+  layout(title = "FX Futures and Options - Daily",
+         xaxis = list(type = 'date',tickformat = "%d %B <br>%Y",fixedrange=T),
+         yaxis = list(fixedrange=T))
+
+viogg
