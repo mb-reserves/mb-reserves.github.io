@@ -345,9 +345,9 @@ rm(ii)
 
 mat <- merge(mat, total_swap, by = "time")
 
-mat[, doviz := doviz]
+mat[, doviz := 1000*doviz]
 
-mat[, altin := altin]
+mat[, altin := 1000*altin]
 
 mat[, toplam := doviz + altin]
 
