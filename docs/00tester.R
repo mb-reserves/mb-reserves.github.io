@@ -31,3 +31,27 @@ as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+18])
 as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+19])
 as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+20])
 
+## VIOP Islemlerinin Buyuklugu
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
+viog
+```
+
+## VIOP Islemlerinin Buyuklugu - Gunluk Veri
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
+viogg
+```
+
+## Magnitude of FX Futures and Options
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
+viog
+```
+
+## Magnitude of FX Futures and Options - Daily
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
+viogg
+```
+

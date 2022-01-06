@@ -229,18 +229,6 @@ ndpg
 zama
 ```
 
-## Magnitude of FX Futures and Options
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
-viog
-```
-
-## Magnitude of FX Futures and Options - Daily
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
-viogg
-```
-
 ## Ratio of Domestic Banks - Swap to Domestic Banks - Total Deposits
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
