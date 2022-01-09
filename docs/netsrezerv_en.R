@@ -338,9 +338,9 @@ save(total_swap, file = paste0(getwd(), "/Total_Swap.RData"))
 
 mat <- merge(mat, total_swap, by = "time")
 
-mat[, doviz := 1000*doviz]
+mat[, doviz := doviz]
 
-mat[, altin := 1000*altin]
+mat[, altin := altin]
 
 mat[, toplam := doviz + altin]
 
