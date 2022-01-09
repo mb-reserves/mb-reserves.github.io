@@ -4,9 +4,11 @@ author:
   - Anıl İsmet Aşçı
    [E-mail](mailto:ismet.asci@outlook.com)
    [LinkedIn](https://www.linkedin.com/in/ismetasci/)
+   [Twitter](https://twitter.com/a_ismet_asci)
   - Ömer Taha Gülberk
    [E-mail](mailto:omertahagulberk@hotmail.com)
    [LinkedIn](https://www.linkedin.com/in/omertahagulberk/)
+   [Twitter](https://twitter.com/omertahag)
     
 output:
  rmdformats::robobook
@@ -215,12 +217,6 @@ sub4
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
 sub1
-```
-
-## Net FX Position
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
-ndpg
 ```
 
 ## Magnitude of SWAP Transactions

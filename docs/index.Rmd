@@ -4,9 +4,11 @@ author:
   - Anıl İsmet Aşçı
    [E-mail](mailto:ismet.asci@outlook.com)
    [LinkedIn](https://www.linkedin.com/in/ismetasci/)
+   [Twitter](https://twitter.com/a_ismet_asci)
   - Ömer Taha Gülberk
    [E-mail](mailto:omertahagulberk@hotmail.com)
    [LinkedIn](https://www.linkedin.com/in/omertahagulberk/)
+   [Twitter](https://twitter.com/omertahag)
     
 output:
  rmdformats::robobook
@@ -196,12 +198,6 @@ sub4
 sub1
 ```
 
-## Net Doviz Pozisyonu
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
-ndpg
-```
-
 ## SWAP Islemlerinin Buyuklugu
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
@@ -334,14 +330,14 @@ IMF Rezerv Pozisyonu çıkartılmış ve döviz varlıkları menkul kıymetler i
 IMF Rezerv Pozisyonu [Merkez Bankası Haftalık Vaziyeti](https://evds2.tcmb.gov.tr/index.php?/evds/DataGroupLink/5/bie_mbblnch/tr) 
 veri setindeki A10 kalemi kullanılarak, döviz varlıklarındaki menkul kıymetler ise A31 kalemi kullanılarak elde edilmiştir. 
 Bu veriler TL cinsinden yayınlandığından alakalı haftadaki [kur verileri](https://evds2.tcmb.gov.tr/index.php?/evds/DataGroupLink/1/bie_dkdovytl/tr)
-kullanılarak dolar cinsine çevirilmiştir. Hesaplamalarda günlük döviz alış kuru (TP.DK.USD.A.YTL) kullanılmıştır.
+kullanılarak dolar cinsine çevirilmiştir. Hesaplamalarda günlük efektif döviz alış kuru (TP.DK.USD.A.EF.YTL) kullanılmıştır.
 
 :::
 
 ::: {style="text-align: justify;"}
 
 TCMB'nin Bilanço İçi Yükümlülükleri ise [Merkez Bankası Haftalık Vaziyeti](https://evds2.tcmb.gov.tr/index.php?/evds/DataGroupLink/5/bie_mbblnch/tr)
-veri seti kullanılarak hazırlanmış ve alakalı gündeki döviz alış kuruna bölünerek dolar cinsinden elde edilmiştir. 
+veri seti kullanılarak hazırlanmış ve alakalı gündeki efektif döviz alış kuruna bölünerek dolar cinsinden elde edilmiştir. 
 Kamu Sektörü Yabancı Para Mevduatı, rezerv hesaplamalarına dahil edilmemiştir. 
 Bu kalemin dahil edilmemesi ve değerleme etkisiyle net rezerv pozisyonu diğer hesaplama yöntemleriyle çıkan sonuçlardan farklılık gösterebilmektedir.
 
