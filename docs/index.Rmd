@@ -34,7 +34,6 @@ source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/mast
 ```
 
 <p style="color:blue">Bu sayfa yeni veriler geldikçe otomatik olarak güncellenecektir.</p>
-<p style="color:red">Yaptığımız hesaplamalarda "ABD Doları(Döviz Alış)" verisini kullanıyorduk, fakat bunun yerine "ABD Doları(Efektif Alış)" verisini kullanmamız gerektiğini öğrendik. Hesaplamalarımızın hepsini ve Metodolojiyi bu doğrultuda güncellemiş bulunmaktayız. İki veri arasında sadece küçük bir küsürat farkı olsa da şeffaflık açısından yaptığımız düzeltmeyi siteyi takip eden sizlere duyurmak istedik. Ayrıca bu ve benzeri konulardaki bilgilendirmesi için @atk_1881 adlı Twitter kullanıcısına teşekkürlerimizi sunuyoruz.</p>
 
 [Verileri İndir](https://github.com/mb-reserves/mb-reserves.github.io/raw/master/Tablo.xlsx)
 
@@ -331,14 +330,14 @@ IMF Rezerv Pozisyonu çıkartılmış ve döviz varlıkları menkul kıymetler i
 IMF Rezerv Pozisyonu [Merkez Bankası Haftalık Vaziyeti](https://evds2.tcmb.gov.tr/index.php?/evds/DataGroupLink/5/bie_mbblnch/tr) 
 veri setindeki A10 kalemi kullanılarak, döviz varlıklarındaki menkul kıymetler ise A31 kalemi kullanılarak elde edilmiştir. 
 Bu veriler TL cinsinden yayınlandığından alakalı haftadaki [kur verileri](https://evds2.tcmb.gov.tr/index.php?/evds/DataGroupLink/1/bie_dkdovytl/tr)
-kullanılarak dolar cinsine çevirilmiştir. Hesaplamalarda günlük efektif döviz alış kuru (TP.DK.USD.A.EF.YTL) kullanılmıştır.
+kullanılarak dolar cinsine çevirilmiştir. Hesaplamalarda günlük döviz alış kuru (TP.DK.USD.A.YTL) kullanılmıştır.
 
 :::
 
 ::: {style="text-align: justify;"}
 
 TCMB'nin Bilanço İçi Yükümlülükleri ise [Merkez Bankası Haftalık Vaziyeti](https://evds2.tcmb.gov.tr/index.php?/evds/DataGroupLink/5/bie_mbblnch/tr)
-veri seti kullanılarak hazırlanmış ve alakalı gündeki efektif döviz alış kuruna bölünerek dolar cinsinden elde edilmiştir. 
+veri seti kullanılarak hazırlanmış ve alakalı gündeki döviz alış kuruna bölünerek dolar cinsinden elde edilmiştir. 
 Kamu Sektörü Yabancı Para Mevduatı, rezerv hesaplamalarına dahil edilmemiştir. 
 Bu kalemin dahil edilmemesi ve değerleme etkisiyle net rezerv pozisyonu diğer hesaplama yöntemleriyle çıkan sonuçlardan farklılık gösterebilmektedir.
 
