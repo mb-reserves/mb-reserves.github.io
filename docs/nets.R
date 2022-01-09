@@ -34,7 +34,7 @@ BRUTR <- na.omit(BRUTR)
 
 USDD <- getDataSeries("TP.DK.USD.A.EF", startDate = "01-01-2021", CBRTKey = myCBRTKey, freq = 1)
 
-USD1 <- data.table(time = as.Date("2021-01-01"), TP.DK.USD.A.YTL = as.numeric(7.4142))
+USD1 <- data.table(time = as.Date("2021-01-01"), TP.DK.USD.A.EF = as.numeric(7.4142))
 
 USDD <- rbind(USD1, USDD)
 
