@@ -32,9 +32,9 @@ BRUTR <- getDataSeries(c("TP.AB.C1", # Altin (altin)
 
 BRUTR <- na.omit(BRUTR)
 
-USDD <- getDataSeries("TP.DK.USD.A.EF.YTL", startDate = "01-01-2021", CBRTKey = myCBRTKey, freq = 1)
+USDD <- getDataSeries("TP.DK.USD.A.YTL", startDate = "01-01-2021", CBRTKey = myCBRTKey, freq = 1)
 
-USD1 <- data.table(time = as.Date("2021-01-01"), TP.DK.USD.A.EF.YTL = as.numeric(7.4142))
+USD1 <- data.table(time = as.Date("2021-01-01"), TP.DK.USD.A.YTL = as.numeric(7.4194))
 
 USDD <- rbind(USD1, USDD)
 
