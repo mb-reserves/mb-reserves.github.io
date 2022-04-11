@@ -1,5 +1,5 @@
 ---
-title: TCMB Rezervleri ve Swap İşlemleri <br> 25 Mart 2022
+title: TCMB Rezervleri ve Swap İşlemleri <br> 1 Nisan 2022
 author: 
   - Anıl İsmet Aşçı
    [E-mail](mailto:ismet.asci@outlook.com)
@@ -18,8 +18,8 @@ output:
 
 knitr::opts_chunk$set(echo = TRUE)
 
-xxx <-4
-yyy <-18
+xxx <-5
+yyy <-19
 
 source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/master/docs/nets.R")
 
