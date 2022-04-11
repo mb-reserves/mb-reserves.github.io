@@ -241,7 +241,55 @@ mat[, altin := mat[,7] + mat[,13]]
 
 mat[, doviz := mat[,16] - mat[,18] - mat[,19]]
 
-pdftable_to_dt("https://www.tcmb.gov.tr/wps/wcm/connect/a5df108d-d109-4dc0-9ea6-76a78b196b4d/V%C4%B0OP+%C4%B0%C5%9Flemleri.pdf?MOD=AJPERES")
+a <- data.table(read_pdf("https://www.tcmb.gov.tr/wps/wcm/connect/a5df108d-d109-4dc0-9ea6-76a78b196b4d/V%C4%B0OP+%C4%B0%C5%9Flemleri.pdf?MOD=AJPERES"))
+
+a <- a %>%
+  unnest_tokens(word, text)
+
+a$time <- as.Date(a$word, format = "%d.%m.%Y")
+
+a$rown <- c(1:nrow(a)) 
+
+c <- a[is.na(time) == F]
+
+c <- as.vector(c$rown)
+
+c[length(c)]-c[length(c)-1]-1
+
+d <- c + c[length(c)]-c[length(c)-1]-1
+
+d
+
+a[, word := gsub(".", "", word, fixed = TRUE)]
+
+as.numeric(a$word)
+
+a_table <- data.table(matrix(0, nrow = length(c), ncol = c[length(c)]-c[length(c)-1]-1))
+
+dat <- data.table("time" = as.Date(rep("2020-01-01", length(c))))
+
+a_table <- cbind(dat, a_table)
+
+q <- c()
+
+for (ii in 1:length(c)) {
+  
+  q <- a[c[ii]:d[ii], ]$word
+  
+  for (k in 1:length(q)) {
+    
+    a_table[ii,k] <- as.character(q[k])
+    
+  }
+}
+
+for (ii in 1:length(c)) {
+  
+  a_table[ii,1]<- as.Date(a[c[ii], ]$time) 
+  
+}
+
+.GlobalEnv$a_table <- a_table
 
 viop_table <- a_table
 
