@@ -31,6 +31,7 @@ as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+18])
 as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+19])
 as.numeric(yswap$word[yswap[ word == "kapsar"]$rown+20])
 
+load(paste0(getwd(), "/docs/Total_Swap.RData"))
 ## VIOP Islemlerinin Buyuklugu
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}

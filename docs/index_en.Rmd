@@ -1,5 +1,5 @@
 ---
-title: CBRT Reserves and Swap Transcations <br> 22 Nisan 2022
+title: CBRT Reserves and Swap Transcations <br> 29 Nisan 2022
 author: 
   - Anıl İsmet Aşçı
    [E-mail](mailto:ismet.asci@outlook.com)

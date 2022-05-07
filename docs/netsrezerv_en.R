@@ -407,11 +407,13 @@ BRUTR[, brut := altin + doviz + SDR]
 
 ypmevd <- getDataSeries("TP.YPMEVD.M131", startDate = "01-01-2021", CBRTKey = myCBRTKey, freq = 3)
 
-
-
 ypmevd <- merge(all_dates_to_2025, ypmevd, by = "time", all.x = T, all.y = T)
 
 ypmevd <- na.locf(ypmevd, fromLast = T)
+
+tb <- data.table(time = as.Date("2022-04-29"), TP.YPMEVD.M131 = 243960.5)
+
+ypmevd <- rbind(ypmevd,tb)
 
 a_brut <- merge(all_dates_to_2025, BRUTR, by = "time", all.x = T, all.y = T)
 
