@@ -1,5 +1,5 @@
 ---
-title: CBRT Reserves and Swap Transcations <br> 29 Nisan 2022
+title: CBRT Reserves and Swap Transcations <br> 6 May 2022
 author: 
   - Anıl İsmet Aşçı
    [E-mail](mailto:ismet.asci@outlook.com)
@@ -18,8 +18,8 @@ output:
 
 knitr::opts_chunk$set(echo = TRUE)
 
-xxx <-4
-yyy <-18
+xxx <-5
+yyy <-19
 
 source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/master/docs/netsrezerv_en.R")
 
