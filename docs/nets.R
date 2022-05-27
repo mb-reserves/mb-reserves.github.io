@@ -182,17 +182,17 @@ c <- a[is.na(time) == F]
 
 c <- as.vector(c$rown)
 
-c[length(c)]-c[length(c)-1]-1
+c[length(c)-1]-c[length(c)-2]-1
 
-d <- c + c[length(c)]-c[length(c)-1]-1
+d <- c + c[length(c)-1]-c[length(c)-2]-1
 
 d
 
-a[, word := gsub(",", "", word, fixed = TRUE)]
+a[, word := gsub(".", "", word, fixed = TRUE)]
 
 as.numeric(a$word)
 
-a_table <- data.table(matrix(0, nrow = length(c), ncol = c[length(c)]-c[length(c)-1]-1))
+a_table <- data.table(matrix(0, nrow = length(c), ncol = c[length(c)-1]-c[length(c)-2]-1))
 
 dat <- data.table("time" = as.Date(rep("2020-01-01", length(c))))
 
@@ -261,7 +261,7 @@ d <- c + c[length(c)]-c[length(c)-1]-1
 
 d
 
-a[, word := gsub(",", "", word, fixed = TRUE)]
+a[, word := gsub(".", "", word, fixed = TRUE)]
 
 as.numeric(a$word)
 
