@@ -173,25 +173,19 @@ DT::datatable(
 
 ## CBRT Reserves and Liabilities {.tabset}
 
-### Current {.tabset}
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
-fig
-```
-
 ### Weekly {.tabset}
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
 sub2
 ```
 
-## Net Reserves Position {.tabset}
-
 ### Current {.tabset}
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
-nr
+fig
 ```
+
+## Net Reserves Position {.tabset}
 
 ### Weekly {.tabset}
 
@@ -199,13 +193,13 @@ nr
 sub3
 ```
 
-## Net Reserves (excluding Swap) Position {.tabset}
-
 ### Current {.tabset}
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
-snr
+nr
 ```
+
+## Net Reserves (excluding Swap) Position {.tabset}
 
 ### Weekly {.tabset}
 
@@ -217,6 +211,12 @@ sub4
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
 sub1
+```
+
+### Current {.tabset}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%"}
+snr
 ```
 
 ## Magnitude of SWAP Transactions
