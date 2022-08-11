@@ -35,7 +35,7 @@ source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/mast
 
 <p style="color:blue">Bu sayfa yeni veriler geldikçe otomatik olarak güncellenecektir.</p>
 
-[Verileri İndir](https://github.com/mb-reserves/mb-reserves.github.io/raw/master/Tablo.xlsx)
+[Verileri İndir](https://github.com/mb-reserves/mb-reserves.github.io/raw/master/docs/Tablo.xlsx)
 
 
 

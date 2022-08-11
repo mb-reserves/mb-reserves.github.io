@@ -35,7 +35,7 @@ source("https://raw.githubusercontent.com/mb-reserves/mb-reserves.github.io/mast
 
 <p style="color:blue"> This page will be updated automatically as new data released.</p>
 
-[Download the Dataset](https://github.com/mb-reserves/mb-reserves.github.io/raw/master/data_table.xlsx)
+[Download the Dataset](https://github.com/mb-reserves/mb-reserves.github.io/raw/master/docs/data_table.xlsx)
 
 
 ## About
