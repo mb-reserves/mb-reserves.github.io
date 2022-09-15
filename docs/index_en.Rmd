@@ -1,15 +1,11 @@
 ---
-title: CBRT Reserves and Swap Transcations <br> 2 September 2022
+title: CBRT Reserves and Swap Transcations <br> 9 September 2022
 author: 
   - Anıl İsmet Aşçı
    [E-mail](mailto:ismet.asci@outlook.com)
    [LinkedIn](https://www.linkedin.com/in/ismetasci/)
    [Twitter](https://twitter.com/a_ismet_asci)
-  - Ömer Taha Gülberk
-   [E-mail](mailto:omertahagulberk@hotmail.com)
-   [LinkedIn](https://www.linkedin.com/in/omertahagulberk/)
-   [Twitter](https://twitter.com/omertahag)
-    
+
 output:
  rmdformats::robobook
 ---
