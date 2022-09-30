@@ -187,7 +187,7 @@ d <- c + 17
 
 d
 
-a[, word := gsub(".", "", word, fixed = TRUE)]
+a[, word := gsub(",", "", word, fixed = TRUE)]
 
 as.numeric(a$word)
 
@@ -260,7 +260,7 @@ d <- c + c[2]-c[1]-1
 
 d
 
-a[, word := gsub(".", "", word, fixed = TRUE)]
+a[, word := gsub(",", "", word, fixed = TRUE)]
 
 as.numeric(a$word)
 
