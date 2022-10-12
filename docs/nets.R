@@ -190,6 +190,8 @@ d
 
 a[, word := gsub(",", "", word, fixed = TRUE)]
 
+a[, word := gsub(".", "", word, fixed = TRUE)]
+
 as.numeric(a$word)
 
 a_table <- data.table(matrix(0, nrow = length(c), ncol = 17))
@@ -262,6 +264,8 @@ d <- c + c[2]-c[1]-1
 d
 
 a[, word := gsub(",", "", word, fixed = TRUE)]
+
+a[, word := gsub(".", "", word, fixed = TRUE)]
 
 as.numeric(a$word)
 

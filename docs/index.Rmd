@@ -1,5 +1,5 @@
 ---
-title: TCMB Rezervleri ve Swap İşlemleri <br> 23 Eylül 2022
+title: TCMB Rezervleri ve Swap İşlemleri <br> 30 Eylül 2022
 author: 
   - Anıl İsmet Aşçı
    [E-mail](mailto:ismet.asci@outlook.com)
