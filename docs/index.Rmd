@@ -11,8 +11,8 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE,  encoding = "UTF-8")
 
-knitr::opts_chunk$set(echo = TRUE)
 
 xxx <-5
 yyy <-19
